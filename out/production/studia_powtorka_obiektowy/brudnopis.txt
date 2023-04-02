@@ -1,0 +1,29 @@
+ Czujnik[] czujniki = new Czujnik[5];       czujniki[0] = new C
+ zujnik("C01");
+        czujniki[1] = new Czujnik("C02");
+        czujniki[2] = new Czujnik("C03");
+        czujniki[3] = new Czujnik("C04");
+        czujniki[4] = new Czujnik("C05");
+        for (int nrCzujnika = 0; nrCzujnika < czujniki.length ; nrCzujnika++) {
+            czujniki[nrCzujnika].wlacz();
+        }
+
+
+        for (int nrCzujnika = 0 ; nrCzujnika< czujniki.length;nrCzujnika++){
+
+        if (czujniki[nrCzujnika].jestWlaczony()){
+            if (czujniki[nrCzujnika].jestAlarm()){
+                System.out.println("Alarm na czujniku : " + czujniki[nrCzujnika].podajIdCzujnika());
+            }
+            else
+                System.out.println("Alarm jest wyłączony " + czujniki[nrCzujnika].podajIdCzujnika());
+
+
+        }}
+            for (int nrCzujnika = 0; nrCzujnika < czujniki.length; nrCzujnika++) {
+                czujniki[nrCzujnika].wylacz();
+            }
+
+
+
+    }
